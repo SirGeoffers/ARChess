@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000013405117352}
+  m_IsPrefabParent: 1
+--- !u!1 &1000012030393824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000013758014798}
+  m_Layer: 0
+  m_Name: Pieces
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000012194982036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010172436316}
+  m_Layer: 0
+  m_Name: Board
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000013405117352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010097049014}
+  - 114: {fileID: 114000012940154384}
+  - 114: {fileID: 114000014210969480}
+  m_Layer: 0
+  m_Name: Chessboard
+  m_TagString: Chessboard
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000010097049014
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013405117352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4000010172436316}
+  - {fileID: 4000013758014798}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &4000010172436316
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012194982036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000010097049014}
+  m_RootOrder: 0
+--- !u!4 &4000013758014798
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012030393824}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000010097049014}
+  m_RootOrder: 1
+--- !u!114 &114000012940154384
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013405117352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4946f91403f6ae8478e70f0c3dd9c1e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scale: 1
+  prefabs:
+    pieces:
+      pawnPrefab: {fileID: 1000012008031554, guid: addc0292819b0f0418c932ab4b7adf00,
+        type: 2}
+      rookPrefab: {fileID: 1000010713850288, guid: af2695ae2a84cba45abcf471bfce2508,
+        type: 2}
+      knightPrefab: {fileID: 1000010193162030, guid: 3577d73f40c910a4099efa050044339a,
+        type: 2}
+      bishopPrefab: {fileID: 1000010750003624, guid: d4e40a80b96c03f40b363343be3b7430,
+        type: 2}
+      queenPrefab: {fileID: 1000014287607200, guid: cadd08aaf78fd264d993f51a62e3c88e,
+        type: 2}
+      kingPrefab: {fileID: 1000013505522152, guid: f542795a0d42cd74bba76eb47e4eea03,
+        type: 2}
+    board:
+      tilePrefab: {fileID: 1000010791013640, guid: 97f986770da42444ca3054fc03b2ef6e,
+        type: 2}
+    materials:
+      black: {fileID: 2100000, guid: c5c3d0394cd0b3149805fd90fa0b0b1b, type: 2}
+      white: {fileID: 2100000, guid: ed0252e8d238e92438cfcf95cc4ef98b, type: 2}
+      team0: {fileID: 2100000, guid: 5e803411bb876264abc2c554f726c255, type: 2}
+      team1: {fileID: 2100000, guid: 3a25f76923b8f2547add01be9d058a7d, type: 2}
+  piecesTransform: {fileID: 4000013758014798}
+  pieces: []
+  board: {fileID: 4000010172436316}
+  tiles: []
+  gestureManager: {fileID: 0}
+  focusedObjectCount: 0
+  transparencyColor: {r: 0, g: 0, b: 0, a: 0}
+  localUser: {fileID: 0}
+  currentTurn: 0
+--- !u!114 &114000014210969480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013405117352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 222
+    i1: 87
+    i2: 158
+    i3: 205
+    i4: 143
+    i5: 237
+    i6: 239
+    i7: 84
+    i8: 169
+    i9: 156
+    i10: 248
+    i11: 67
+    i12: 166
+    i13: 187
+    i14: 149
+    i15: 56
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
